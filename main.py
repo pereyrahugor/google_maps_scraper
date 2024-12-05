@@ -118,7 +118,8 @@ def main():
         page.wait_for_timeout(5000)
         
         for search_for_index, search_for in enumerate(search_list):
-            print(f"-----\n{search_for_index} - {search_for}".strip())
+            #print(f"-----\n{search_for_index} - {search_for}".strip())
+            print(f"-----{search_for_index} - {search_for}".strip())
 
             page.locator('//input[@id="searchboxinput"]').fill(search_for)
             page.wait_for_timeout(3000)
@@ -237,8 +238,9 @@ def main():
             #########
             # output
             #########
-            business_list.save_to_excel(f"google_maps_data_{search_for}".replace(' ', '_'))
-            business_list.save_to_csv(f"google_maps_data_{search_for}".replace(' ', '_'))
+            #business_list.save_to_excel(f"google_maps_data_{search_for}".replace(' ', '_'))
+            business_list.save_to_excel(f"google_maps_data_scrap".replace(' ', '_'))
+            #business_list.save_to_csv(f"google_maps_data_{search_for}".replace(' ', '_'))
 
         browser.close()
 
