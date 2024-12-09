@@ -188,6 +188,8 @@ def main():
                     phone_number_xpath = '//button[contains(@data-item-id, "phone:tel:")]//div[contains(@class, "fontBodyMedium")]'
                     review_count_xpath = '//button[@jsaction="pane.reviewChart.moreReviews"]//span'
                     reviews_average_xpath = '//div[@jsaction="pane.reviewChart.moreReviews"]//div[@role="img"]'
+                    #mail
+                    #redes sociales
                     
                     
                     business = Business()
